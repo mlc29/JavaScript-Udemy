@@ -1,4 +1,4 @@
-/* // Values & Variables Lecture
+/*// Values & Variables Lecture
 let js = "amazing";
 console.log(40 + 8 + 23 - 10);
 
@@ -12,17 +12,17 @@ console.log(firstName);
 console.log(firstName);
 
 // Variable name conventions
-let jonas_matilda = 'JM';
+let jonas_matilda = "JM";
 let $function = 27;
 
-let person = 'jonas';
+let person = "jonas";
 let PI = 3.1415;
 
-let myFirstJob = 'Coder';
-let myCurrentJob = 'Teacher';
+let myFirstJob = "Coder";
+let myCurrentJob = "Teacher";
 
-let job1 = 'programmer';
-let job2 = 'teacher';
+let job1 = "programmer";
+let job2 = "teacher";
 
 console.log(myFirstJob);
 
@@ -36,11 +36,11 @@ console.log(typeof javascriptIsFun);
 // console.log(typeof 23);
 // console.log(typeof 'Jonas');
 
-javascriptIsFun = 'YES!';
+javascriptIsFun = "YES!";
 console.log(typeof javascriptIsFun);
 
 let year;
-console.log(year)
+console.log(year);
 console.log(typeof year);
 
 year = 1991;
@@ -57,11 +57,11 @@ const birthYear = 1991;
 // birthYear = 1990;
 // const job;
 
-var job = 'programmer';
-job = 'teacher';
+var job = "programmer";
+job = "teacher";
 
-lastName = 'Schmedtmann';
-console.log(lastName)
+lastName = "Schmedtmann";
+console.log(lastName);
 
 
 // Basic Operators Lecture
@@ -112,12 +112,13 @@ console.log(ageJonas, ageSarah, averageAge);
 
 
 // Strings and Template Literals Lecture
-const firstName = 'Jonas';
-const job = 'teacher';
+const firstName = "Jonas";
+const job = "teacher";
 const birthYear = 1991;
 const year = 2037;
 
-const jonas = "I'm " + firstName + ', a ' + (year - birthYear) + ' year old ' + job + '!';
+const jonas =
+  "I'm " + firstName + ", a " + (year - birthYear) + " year old " + job + "!";
 console.log(jonas);
 
 const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
@@ -125,9 +126,11 @@ console.log(jonasNew);
 
 console.log(`Just a regular string...`);
 
-console.log('String with \n\
+console.log(
+  "String with \n\
 multiple \n\
-lines');
+lines"
+);
 
 console.log(`String
 multiple
@@ -157,24 +160,23 @@ console.log(century);
 
 // Type Conversion and Coercion Lecture
 // type conversion
-const inputYear = '1991';
+const inputYear = "1991";
 console.log(Number(inputYear), inputYear);
 console.log(Number(inputYear) + 18);
 
-console.log(Number('Jonas'));
+console.log(Number("Jonas"));
 console.log(typeof NaN);
 
 console.log(String(23), 23);
 
 // type coercion
-console.log('I am ' + 23 + ' years old');
-console.log('23' - '10' - 3);
-console.log('23' / '2');
+console.log("I am " + 23 + " years old");
+console.log("23" - "10" - 3);
+console.log("23" / "2");
 
-
-let n = '1' + 1;
+let n = "1" + 1;
 n = n - 1;
-console.log(n)
+console.log(n);
 
 
 // Truthy and Falsy Values Lecture
@@ -303,21 +305,24 @@ if (23 > 10) {
 
 const me = 'Jonas';
 console.log(`I'm ${2037 - 1991} years old ${me}`);
-*/
+
 
 // The Conditional (Ternary) Operator Lecture
-const age = 23;
-// age >= 18 ? console.log('I like to drink wine 🍷') :     console.log('I like to drink water 💧');
+const age = 18;
+age >= 18
+  ? console.log("I like to drink wine 🍷")
+  : console.log("I like to drink water 💧");
 
-const drink = age >= 18 ? 'wine 🍷' : 'water 💧';
-console.log(drink)
+const drink = age >= 18 ? "wine 🍷" : "water 💧";
+console.log(drink);
 
 let drink2;
 if (age >= 18) {
-    drink2 = 'wine 🍷';
+  drink2 = "wine 🍷";
 } else {
-    drink2 = 'water 💧';
+  drink2 = "water 💧";
 }
-console.log(drink2)
+console.log(drink2);
 
-console.log(`I like to drink ${age >= 18 ? 'wine 🍷' : 'water 💧'}`);
+console.log(`I like to drink ${age >= 18 ? "wine 🍷" : "water 💧"}`);
+*/
